@@ -3,71 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Workpe - Download Center</title>
+    <title>Download Workpe App</title>
     <style>
         body {
-            background-color: #000000;
-            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0b0f19; /* ডার্ক ব্যাকগ্রাউন্ড ২ নম্বর ছবির মতো */
+            color: white;
             display: flex;
-            flex-direction: column;
-            align-items: center;
             justify-content: center;
+            align-items: center;
             height: 100vh;
             margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             text-align: center;
         }
-        .container {
-            padding: 20px;
+        .card {
+            background: #161b22;
+            padding: 40px 20px;
+            border-radius: 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            width: 85%;
+            max-width: 380px;
         }
-        img {
-            width: 120px;
-            height: 120px;
+        .app-logo {
+            width: 100px;
+            height: 100px;
             border-radius: 20px;
-            margin-bottom: 25px;
-            box-shadow: 0px 0px 20px rgba(0, 132, 255, 0.5);
+            margin-bottom: 15px;
+            background: #21262d;
+            padding: 5px;
         }
         h1 {
-            font-size: 24px;
-            margin-bottom: 10px;
+            margin: 10px 0;
+            font-size: 28px;
+            font-weight: bold;
         }
-        p {
-            color: #aaaaaa;
+        .description {
+            color: #8b949e;
+            font-size: 16px;
+            line-height: 1.5;
             margin-bottom: 30px;
+            padding: 0 10px;
         }
-        .btn {
-            background-color: #0084ff;
+        .download-btn {
+            background: #238636; /* সবুজ বাটন */
             color: white;
             padding: 15px 40px;
             text-decoration: none;
-            border-radius: 30px;
-            font-size: 18px;
             font-weight: bold;
-            transition: 0.3s;
+            border-radius: 12px;
+            display: inline-block;
+            font-size: 18px;
+            transition: 0.3s ease;
         }
-        .btn:hover {
-            background-color: #0056b3;
+        .download-btn:hover {
+            background: #2ea043;
+            transform: translateY(-2px);
         }
     </style>
 </head>
-<body onload="startDownload()">
+<body>
+    <div class="card">
+        <img src="https://raw.githubusercontent.com/WorkpeDownload/workpe-/main/logo.png" alt="Workpe Logo" class="app-logo">
+        
+        <h1>Workpe</h1>
+        
+        <p class="description">
+            Download and Play and win redeem code, <br>
+            upi cash , Amazon voucher
+        </p>
 
-    <div class="container">
-        <img src="logo.png" alt="Workpe Logo">
-        
-        
-        <h1>Workpe Application</h1>
-        <p>Your download will start automatically in 5 seconds...</p>
-        
-<a href="app3955196-30z6jf (4).apk" class="btn">Download Now</a>
+        <a href="https://github.com/WorkpeDownload/workpe-/releases/download/v1.0/app3955196-30z6jf.9.apk" class="download-btn">DOWNLOAD APP</a>
     </div>
-
-    <script>
-        function startDownload() {
-            setTimeout(function() {
-                window.location.href = 'app3955196-30z6jf (4).apk';
-            }, 5000);
-        }
-    </script>
 </body>
 </html>
